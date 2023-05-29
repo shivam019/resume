@@ -36,11 +36,11 @@
 <h3> Social Profiles</h3><br>
        <div class="inputfield">
           <label>Github Profile</label>
-          <input type="password" id="gitf" class="input">
+          <input type="text" id = "githubf" class="input">
        </div>  
        <div class="inputfield">
         <label>Linkdin Profile</label>
-        <input type="password" id="linkdinf" class="input">
+        <input type="text" id = "linkdinf" class="input">
      </div> 
 
 
@@ -50,10 +50,12 @@
           <label>Role</label>
           <input type="text" id="rolef" class="input">
        </div> 
-      <div class="inputfield">
-          <label>Objective</label>
-          <textarea class="textarea"></textarea>
-       </div> 
+     
+       <div class="inputfield">
+        <label>Objective</label>
+        <input type="text" id="objf" class="input">
+     </div> 
+   
        
       <div class="inputfield">
           <label>Acedemic Qualification</label>
@@ -90,7 +92,7 @@
  <h3> Skills</h3> <br>
      <div class="inputfield">
          <label>Skills</label>
-         <input type="text" class="input">
+         <input type="text" id="skillf" class="input">
       </div> 
 
      
@@ -111,11 +113,14 @@
                       <img src = "https://e7.pngegg.com/pngimages/527/663/png-clipart-logo-person-user-person-icon-rectangle-photography-thumbnail.png" alt = "" id = "image_dsp"> 
                   </div>
                   <div class = "preview-item preview-item-name">
-                      <span class = "preview-item-val fw-6" id = ""> </span>
+                      <span class = "preview-item-val fw-6" id = "namep1"> </span>
                   </div>
                   <div class = "preview-item">
-                      <span class = "preview-item-val text-uppercase fw-6 ls-1" id = ""></span>
+                      <span class = "preview-item-val text-uppercase fw-6 ls-1" id = "rolep"></span>
                   </div>
+                  <div class = "preview-item">
+                    <span class = "preview-item-val text-uppercase fw-6 ls-1" id = "objp"></span>
+                </div>
               </div>
 
               <div class = "preview-blk">
@@ -135,6 +140,12 @@
                       <div class = "preview-item">
                           <span class = "preview-item-val" id = "addressp"></span>
                       </div>
+                      <div class = "preview-item">
+                        <span class = "preview-item-val" id = "githubp"></span>
+                    </div>
+                    <div class = "preview-item">
+                        <span class = "preview-item-val" id = "linkdinp"></span>
+                    </div>
                   </div>
               </div>
 
@@ -142,10 +153,12 @@
                   <div class = "preview-blk-title">
                       <h3>skills</h3>
                   </div>
-                  <div class = "skills-items preview-blk-list" id = "skills_dsp">
+                  <div class = "skills-items preview-blk-list" id = "skillp">
                       <!-- skills list here -->
                   </div>
               </div>
+
+              
           </div>
 
           <div class = "preview-cnt-r bg-white">
