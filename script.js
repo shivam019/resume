@@ -67,9 +67,7 @@ function generateResume() {
     "addressf"
   ).value;
 
-  document.getElementById("skillp").innerHTML = document.getElementById(
-    "skillf"
-  ).value;
+ 
 
   document.getElementById("githubp").innerHTML = document.getElementById(
     "githubf"
