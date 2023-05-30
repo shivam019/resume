@@ -1,3 +1,48 @@
+function addNewWEField() {
+  //   console.log("Adding new field");
+
+  let newNode = document.createElement("textarea");
+  newNode.classList.add("input");
+  newNode.classList.add("wef");
+  newNode.classList.add("mt-2");
+  newNode.setAttribute("rows", 3);
+  newNode.setAttribute("placeholder", "Enter here");
+
+  let weOb = document.getElementById("we");
+  let weAddButtonOb = document.getElementById("weAddButton");
+
+  weOb.insertBefore(newNode, weAddButtonOb);
+}
+
+function addNewAQField() {
+  let newNode = document.createElement("textarea");
+  newNode.classList.add("input");
+  newNode.classList.add("aqf");
+  newNode.classList.add("mt-2");
+  newNode.setAttribute("rows", 3);
+  newNode.setAttribute("placeholder", "Enter here");
+
+  let aqOb = document.getElementById("aq");
+  let aqAddButtonOb = document.getElementById("aqAddButton");
+
+  aqOb.insertBefore(newNode, aqAddButtonOb);
+}
+
+function addNewSKILLField() {
+  let newNode = document.createElement("textarea");
+  newNode.classList.add("input");
+  newNode.classList.add("skillf");
+  newNode.classList.add("mt-2");
+  newNode.setAttribute("rows", 3);
+  newNode.setAttribute("placeholder", "Enter here");
+
+  let aqOb = document.getElementById("skillid");
+  let aqAddButtonOb = document.getElementById("skillAddButton");
+
+  aqOb.insertBefore(newNode, aqAddButtonOb);
+}
+
+
 function generateResume() {
 
   // Social Section Name, Mob, Links etc
@@ -45,9 +90,9 @@ function generateResume() {
 
 
 
-  //we
+  // Work Experiance
 
-  let wes = document.getElementsByClassName("weField");
+  let wes = document.getElementsByClassName("wef");
 
   let str = "";
 
@@ -57,9 +102,12 @@ function generateResume() {
 
   document.getElementById("weT").innerHTML = str;
 
+
+
+
   //aq
 
-  let aqs = document.getElementsByClassName("eqField");
+  let aqs = document.getElementsByClassName("aqf");
 
   let str1 = "";
 
@@ -67,11 +115,13 @@ function generateResume() {
     str1 += `<li> ${e.value} </li>`;
   }
 
-  document.getElementById("aqT").innerHTML = str1;
+  document.getElementById("aqp").innerHTML = str1;
+
+
 
   //code for setting image
 
-  let file = document.getElementById("imgField").files[0];
+  let file = document.getElementById("imgf").files[0];
 
   console.log(file);
 
@@ -84,7 +134,7 @@ function generateResume() {
   //set the image to template
 
   reader.onloadend = function () {
-    document.getElementById("imgTemplate").src = reader.result;
+    document.getElementById("imgp").src = reader.result;
   };
 
   document.getElementById("cv-form").style.display = "none";

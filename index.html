@@ -18,7 +18,12 @@
        <div class="inputfield">
           <label>First Name</label>
           <input type="text" placeholder = "Enter your name" id = "namef" class="input">
-          </div>  
+          </div>
+
+          <div class="inputfield">
+          <label for="">Passport Size Photo</label>
+          <input id="imgf" type="file" class="input"/>
+        </div>
        
        <div class="inputfield">
         <label> Mobile No</label>
@@ -57,14 +62,24 @@
      </div> 
    
        
-      <div class="inputfield">
-          <label>Acedemic Qualification</label>
-          <input type="text" placeholder =" % or CGPA" id="'Acedemicf" class="input">
-          <div class="container text-center mt-3">
-            <button> Add </button>
-          </div>
-          
-       </div> 
+     <h3> Education</h3><br>
+     <div class="inputfield" id="aq">
+      <label>Acedemic Qualification</label>
+      <textarea
+                  placeholder="Enter here"
+                  class="input aqf"
+                  rows="3"
+                ></textarea>
+                <!-- Text Area -->
+                <div class="container text-center mt-2" id="aqAddButton">
+                    <button
+                      onclick="addNewAQField()"
+                      class="btn btn-primary btn-sm"
+                    >
+                      Add
+                    </button>
+                  </div>
+                </div> 
 
    
        <div class="inputfield">
@@ -75,14 +90,28 @@
       <label>Projects</label>
       <input type="text" class="input">
    </div>
+
+<!-- Work Experiance -->
   <h3> Work Experiance</h3><br>
-     <div class="inputfield">
+     <div class="inputfield" id="we">
       <label>Work Experiance</label>
-      <input type="text" class="input">
-      <div class="container text-center mt-3">
-        <button> Add </button>
-      </div>
-   </div> 
+      <textarea
+                  placeholder="Enter here"
+                  class="input wef"
+                  rows="3"
+                ></textarea>
+                <!-- Text Area -->
+                <div class="container text-center mt-2" id="weAddButton">
+                    <button
+                      onclick="addNewWEField()"
+                      class="btn btn-primary btn-sm"
+                    >
+                      Add
+                    </button>
+                  </div>
+                </div> 
+
+
 
    <div class="inputfield">
     <label>Extra Cirricular Activitites</label>
@@ -90,10 +119,23 @@
  </div> 
 
  <h3> Skills</h3> <br>
-     <div class="inputfield">
-         <label>Skills</label>
-         <input type="text" id="skillf" class="input">
-      </div> 
+ <div class="inputfield" id="skillid">
+  <label>Skills</label>
+  <textarea
+              placeholder="Enter here"
+              class="input skillf"
+              rows="3"
+            ></textarea>
+            <!-- Text Area -->
+            <div class="container text-center mt-2" id="skillAddButton">
+                <button
+                  onclick="addNewSKILLField()"
+                  class="btn btn-primary btn-sm"
+                >
+                  Add
+                </button>
+              </div>
+            </div> 
 
      
       <div class="container">
@@ -110,7 +152,7 @@
           <div class = "preview-cnt-l bg-green text-white">
               <div class = "preview-blk">
                   <div class = "preview-image">
-                      <img src = "https://e7.pngegg.com/pngimages/527/663/png-clipart-logo-person-user-person-icon-rectangle-photography-thumbnail.png" alt = "" id = "image_dsp"> 
+                      <img src = "https://media.istockphoto.com/id/1087531642/vector/male-face-silhouette-or-icon-man-avatar-profile-unknown-or-anonymous-person-vector.jpg?s=612x612&w=0&k=20&c=FEppaMMfyIYV2HJ6Ty8tLmPL1GX6Tz9u9Y8SCRrkD-o=" alt = "" id = "imgp"> 
                   </div>
                   <div class = "preview-item preview-item-name">
                       <span class = "preview-item-val fw-6" id = "namep1"> </span>
@@ -173,14 +215,14 @@
                   <div class = "preview-blk-title">
                       <h3>educations</h3>
                   </div>
-                  <div class = "educations-items preview-blk-list" id = "educations_dsp"></div>
+                  <div class = "educations-items preview-blk-list" id = "aqp"></div>
               </div>
 
               <div class = "preview-blk">
                   <div class = "preview-blk-title">
                       <h3>experiences</h3>
                   </div>
-                  <div class = "experiences-items preview-blk-list" id = "experiences_dsp"></div>
+                  <div class = "experiences-items preview-blk-list" id = "weT"></div>
               </div>
 
               <div class = "preview-blk">
