@@ -77,13 +77,27 @@
     </div>
 
 
-    <div class="inputfield">
-      <label>Certifiction</label>
-      <input type="text" class="input">
+    <div class="inputfield" id="certid">
+      <label>Certifications</label>
+      <textarea placeholder="Enter here" class="input certf" rows="3"></textarea>
+      <!-- Text Area -->
+      <div class="container text-center mt-2" id="certAddButton">
+        <button onclick="addNewCERTField()" class="btn btn-primary btn-sm">
+          Add
+        </button>
+      </div>
     </div>
-    <div class="inputfield">
+
+
+    <div class="inputfield" id="projectid">
       <label>Projects</label>
-      <input type="text" class="input">
+      <textarea placeholder="Enter here" class="input projectf" rows="3"></textarea>
+      <!-- Text Area -->
+      <div class="container text-center mt-2" id="projectAddButton">
+        <button onclick="addNewPROJECTField()" class="btn btn-primary btn-sm">
+          Add
+        </button>
+      </div>
     </div>
 
     <!-- Work Experiance -->
@@ -103,7 +117,7 @@
 
     <div class="inputfield">
       <label>Extra Cirricular Activitites</label>
-      <input type="text" class="input">
+      <input type="text" id="ecaf" class="input">
     </div>
 
     <h3> Skills</h3> <br>
@@ -187,12 +201,7 @@
       </div>
 
       <div class="preview-cnt-r bg-white">
-        <div class="preview-blk">
-          <div class="preview-blk-title">
-            <h3>Achievements</h3>
-          </div>
-          <div class="achievements-items preview-blk-list" id="achievementsp"></div>
-        </div>
+       
 
         <div class="preview-blk">
           <div class="preview-blk-title">
@@ -210,10 +219,25 @@
 
         <div class="preview-blk">
           <div class="preview-blk-title">
-            <h3>projects</h3>
+            <h3>Projects</h3>
           </div>
-          <div class="projects-items preview-blk-list" id="projects_dsp"></div>
+          <div class="projects-items preview-blk-list" id="projectp"></div>
         </div>
+
+        <div class="preview-blk">
+          <div class="preview-blk-title">
+            <h3>Certifications</h3>
+          </div>
+          <div class="projects-items preview-blk-list" id="certp"></div>
+        </div>
+
+        <div class="preview-blk">
+          <div class="preview-blk-title">
+            <h3>Extra Cirricular Activitites</h3>
+          </div>
+          <div class="projects-items preview-blk-list" id="ecap"></div>
+        </div>
+
       </div>
     </div>
   </div>
